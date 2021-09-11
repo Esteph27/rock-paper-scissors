@@ -17,6 +17,13 @@ h1 {
     font-size: 110px;
 }
 
+h2 {
+    font-family: Righteous;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+
 /*------- header*/
 
 #header {
@@ -43,23 +50,23 @@ h1 {
     background-color: lightgreen;
 }
 
-#player-1 {
+#player-1-icon {
     margin: auto;
     float: left;
     margin-left: 20%;
     height: 400px;
     width: 400px;
-    background-color:yellow;
+    background: url('../images/ROCK.jpg');
     margin-top: 3%;
 }
 
-#player-2 {
+#player-2-icon {
     margin: auto;
     float: right;
     margin-right: 20%;
     height: 400px;
     width: 400px;
-    background-color: yellow;
+    background: url('../images/PAPER.jpg');
     margin-top: 3%;
 }
 
@@ -76,8 +83,13 @@ h1 {
 .icons {
     width: 100px;
     height: 100px;
-    background-color: violet;
+    background-color: yellow;
     display: inline-block;
     margin-left: 12%;
     margin-right: 5%;
+}
+
+.icons h1 {
+    font-size: 90px;
+    text-align: center;
 }
