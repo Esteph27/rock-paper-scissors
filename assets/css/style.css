@@ -34,13 +34,23 @@ h2 {
 
 /*------- scorebar*/
 
-#score-bar {
+#score-container {
     width: 50%;
     height: 80px;
     background-color: pink;
     margin-right: auto;
     margin-left: auto;
 }
+
+#score-bar {
+    width: 100%;
+    height: 50px;
+    border: 0.2rem solid red;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+
 
 /*------- game area*/
 
