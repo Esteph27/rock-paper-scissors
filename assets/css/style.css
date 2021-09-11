@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Righteous&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
+body {
+    font-family: Raleway, sans-serif;
+}
+
+h1 {
+    font-family: Righteous;
+}
