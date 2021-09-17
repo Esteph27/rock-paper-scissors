@@ -69,11 +69,11 @@ h2 {
     float: left;
 }
 
-#player-1-icon {
+#player-1-icon, #player-2-icon  {
     margin: auto;
     height: 400px;
     width: 400px;
-    background: url('../images/ROCK.jpg');
+    background: url(../images/PAPER.jpg);
     display: block;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -98,15 +98,6 @@ h2 {
     float: left;
 }
 
-#player-2-icon {
-    margin: auto;
-    height: 400px;
-    width: 400px;
-    background: url('../images/PAPER.jpg');
-    display: block;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
 
 #score-bar-2 {
     width: 30%;
