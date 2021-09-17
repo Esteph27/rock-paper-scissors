@@ -89,6 +89,17 @@ h2 {
     display: block;
 }
 
+#score-bar-1-fill {
+    width: 0%;
+    height: 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+    background-color: #00FFFF;
+    float: left;
+}
+
 /*------- Player-2*/
 
 #player-2 {
@@ -98,7 +109,6 @@ h2 {
     float: left;
 }
 
-
 #score-bar-2 {
     width: 30%;
     height: 30px;
@@ -107,6 +117,17 @@ h2 {
     overflow: hidden;
     margin: auto;
     display: block;
+}
+
+#score-bar-2-fill {
+    width: 0%;
+    height: 30px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+    background-color: #00FFFF;
+    float: right;
 }
 
 /*------- select-area*/

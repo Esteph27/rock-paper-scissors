@@ -4,10 +4,10 @@
 // $('#btn-p').click(function() {selectWeapon()})
 // $('#btn-s').click(function() {selectWeapon()}) 
 
-function selectWeapon() {
-    console.log('weapon selected!')
-}
+let player1Score = 0
+let computerScore = 0 
 
+//---------- when player selects ROCK
 $("#btn-r").click(function() {
     // player 1 selects rock
     chooseWeapon("ROCK")
@@ -25,15 +25,21 @@ $("#btn-r").click(function() {
         $('#player-2-icon').css("background", "url(../assets/images/SCISSORS.jpg)");
     }
 
+    // works out score and score bar increases for winner 
     if (random === 3) {
         console.log("Player 1 wins!");
+        player1Score++
+        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%")
+        console.log("Player score", player1Score);
     } else if (random == 2) {
         console.log("You lost - haha");
-    } else if (random == 1) {
-        console.log("it's a draw!");
+        computerScore++
+        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
+        console.log("Computer score", computerScore);
     }
 })
   
+//---------- when player selects PAPER
 $("#btn-p").click(function() {
     chooseWeapon("PAPER")
     $('#player-1-icon').css("background", "url(../assets/images/PAPER.jpg)")
@@ -51,13 +57,18 @@ $("#btn-p").click(function() {
 
     if (random === 3) {
         console.log("You lost - haha");
-    } else if (random == 2) {
-        console.log("it's a draw!");
+        computerScore++
+        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
+        console.log("Computer score", computerScore)
     } else if (random == 1) {
         console.log("Player 1 wins!");
+        player1Score++
+        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%")
+        console.log("Player score", player1Score);
     }
 })
 
+//---------- when player selects SCISSORS
 $("#btn-s").click(function() {
     chooseWeapon("SCISSORS")
     $('#player-1-icon').css("background", "url(../assets/images/SCISSORS.jpg)")
@@ -75,10 +86,14 @@ $("#btn-s").click(function() {
 
     if (random === 3) {
         console.log("Player 1 wins!");
-    } else if (random == 2) {
-        console.log("it's a draw!");
+        player1Score++
+        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%")
+        console.log("Player score", player1Score);
     } else if (random == 1) {
         console.log("You lost - haha");
+        computerScore++
+        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
+        console.log("Computer score", computerScore);
     }
 })
 
