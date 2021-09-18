@@ -7,7 +7,7 @@
 let player1Score = 0
 let computerScore = 0 
 
-//---------- when player selects ROCK
+//---------- when player selects ROCK 
 $("#btn-r").click(function() {
     // player 1 selects rock
     chooseWeapon("ROCK")
@@ -38,18 +38,25 @@ $("#btn-r").click(function() {
         console.log("Computer score", computerScore);
     } 
 
-    //console.log($("#score-bar-1-fill").css("width"))
+    // check width of score fill bar 
+    console.log($("#score-bar-1-fill").css("width"))
 
+    // when score bar for player 1 reaches it's max, delcare winner;
     if ($("#score-bar-1-fill").css("width") === "300px") {
         setTimeout(function(){ 
-            alert("you won!");
+            alert("Congrats, you won! Play Again?");
             location.reload();
-        }, 500);
+        }, 300);
         console.log('you won the whole game');
     } 
-    
-    if (computerScore === 5) {
-    console.log('you lost try again');
+
+    // when score bar for player 2 reaches it's max, delcare winner;
+    if ($("#score-bar-2-fill").css("width") === "300px") {
+        setTimeout(function(){ 
+            alert("Oh dear, looks like you lost this time. Try again?");
+            location.reload();
+        }, 300);
+        console.log('you won the whole game');
     } 
 })
   
@@ -80,6 +87,22 @@ $("#btn-p").click(function() {
         $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%")
         console.log("Player score", player1Score);
     }
+
+     if ($("#score-bar-1-fill").css("width") === "300px") {
+        setTimeout(function(){ 
+            alert("Congrats, you won! Play Again?");
+            location.reload();
+        }, 300);
+        console.log('you won the whole game');
+    } 
+
+    if ($("#score-bar-2-fill").css("width") === "300px") {
+        setTimeout(function(){ 
+            alert("Oh dear, looks like you lost this time. Try again?");
+            location.reload();
+        }, 300);
+        console.log('you won the whole game');
+    } 
 })
 
 //---------- when player selects SCISSORS
@@ -109,6 +132,22 @@ $("#btn-s").click(function() {
         $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
         console.log("Computer score", computerScore);
     }
+     
+    if ($("#score-bar-1-fill").css("width") === "300px") {
+        setTimeout(function(){ 
+            alert("Congrats, you won! Play Again?");
+            location.reload();
+        }, 300);
+        console.log('you won the whole game');
+    } 
+
+    if ($("#score-bar-2-fill").css("width") === "300px") {
+        setTimeout(function(){ 
+            alert("Oh dear, looks like you lost this time. Try again?");
+            location.reload();
+        }, 300);
+        console.log('you won the whole game');
+    } 
 })
 
 function chooseWeapon(weapon) {
