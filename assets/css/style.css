@@ -14,8 +14,8 @@ body {
 #header {
     width: 100%;
     height: 150px;
-    background-color: rgba(255, 99, 71, 0.2);
     text-align: center;
+    background-color: rgba(255, 99, 71, 0.2);
 }
 
 #header h1 {
@@ -33,9 +33,7 @@ body {
 } 
 
 #header-offset {
-    color: black;
     margin: auto;
-   
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -53,10 +51,8 @@ body {
 #game-area {
     width: 100%;
     height: 600px;
-    background-color: white;
     text-align: center;
 }
-
 
 #game-area h2 {
     margin-top: 1%;
@@ -126,13 +122,11 @@ body {
 
 /*------- select-area*/
 
-#select-area {
-    width: 100%;
-    height: 100px;
-    background-color: rgba(255, 99, 71, 0.2);
-    margin-right: auto;
-    margin-left: auto;
+ #select-area {
+     width: 100%;
+     height: 150px;
     text-align: center;
+    background-color: rgba(255, 99, 71, 0.2);
 }
 
 .icons {
@@ -142,16 +136,14 @@ body {
     display: inline-block;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 1.5%;
 }
 
 .icons h1 {
     font-family: Righteous;
-    font-size: 110px;
-    margin: auto;
-    margin-left: 1.2%;
     font-size: 90px;
-    text-align: center;
     color: black;
+    text-align: center;
 }
 
 /*---------------media queries /
@@ -159,43 +151,40 @@ body {
 /* For Ipad devices */
 
 @media screen and (max-width: 1200px) {
-
-    #header {
-        width: 100%;
-        height: 100px;
-        word-break: break-all;
-    }
+   
+     /* header */
 
     #header h1 {
-        font-size: 70px;
+        font-size: 60px;
+        word-wrap: break-word;
+        margin-left: 20%;
+        margin-right: 20%;
+        letter-spacing: 20px;
     }
 
-    #header-offset h1 {
-        font-size: 70px;
+    #header-offset {
+        left: 0;
+        top: 0.5%;
+        right: 0;
     }
 
     /* game area */
 
     #game-area {
         width: 100%;
-        height: 60%;
+        height: 500px;
     }
 
-    #player-1 {
+    #player-1, #player-2 {
         width: 50%;
-        height: 50%;
-        background-color:rgba(240, 21, 203, 0.5);
-        display: block;
-        float: left;
+        height: 100%;
     }
 
-    #player-2 {
-        width: 50%;
-        height: 50%;
-        background-color:rgba(240, 21, 203, 0.5);
-        display: block;
-        float: left;
+    #player-1 h2, #player-2 h2{
+        padding-top: 5%;
     }
+
+    /* icons */
 
     #player-1-icon, #player-2-icon {
         margin: auto;
@@ -205,15 +194,79 @@ body {
         margin-bottom: 5%;
     }
 
-    /* select area */
-
-    #select-area {
-        width: 100%;
-        height: 50%;
-        
+    .icons {
+        margin-top: 2%;
     }
 
+    .icons h1 {
+        font-size: 70px;
+        margin-left: 0%;
+        padding: 4%;
+        
+    }
 }
 
 /* For mobile devices from 480px wide and down */
 
+@media screen and (max-width: 480px) {
+     /* header */
+    #header {
+        height: 100px;
+    }
+
+    #header h1 {
+        font-size: 35px;
+        word-wrap: break-word;
+        margin-left: 0;
+        margin-right: 0;
+        letter-spacing: 15px;
+    }
+
+    /* game area */
+
+    #game-area {
+        height: 300px;
+    }
+
+    #player-1, #player-2 {
+        width: 50%;
+        height: 100%;
+    }
+
+    #player-1 h2, #player-2 h2{
+       font-size: 20px;
+       margin-top: 8%;
+    }
+
+    #score-bar-1, #score-bar-2 {
+        width: 70px;
+        height: 15px;
+        border: 0.2rem solid yellow;
+    }
+
+    #score-bar-1-fill, #score-bar-2-fill {
+        width: 0%;
+        height: 15px;
+    }
+
+    /* icons */
+
+    #player-1-icon, #player-2-icon {
+        margin: auto;
+        height: 150px;
+        width: 150px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .icons {
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    .icons h1 {
+        font-size: 60px;
+    }
+
+}
