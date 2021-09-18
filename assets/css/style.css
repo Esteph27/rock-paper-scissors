@@ -47,7 +47,6 @@ h2 {
 
 /*------- game area*/
 
-
 #game-area {
     width: 100%;
     height: 600px;
@@ -58,8 +57,6 @@ h2 {
 #game-area h2 {
     margin-top: 1%;
 }
-
-/*------- Player-1*/
 
 #player-1 {
     width: 50%;
@@ -79,8 +76,8 @@ h2 {
     margin-bottom: 5%;
 }
 
-#score-bar-1 {
-    width: 30%;
+#score-bar-1, #score-bar-2 {
+    width: 300px;
     height: 30px;
     border: 0.2rem solid rgb(243, 255, 71);
     border-radius: 50px;
@@ -100,8 +97,6 @@ h2 {
     float: left;
 }
 
-/*------- Player-2*/
-
 #player-2 {
     width: 50%;
     height: 600px;
@@ -109,7 +104,7 @@ h2 {
     float: left;
 }
 
-#score-bar-2 {
+/* #score-bar-2 {
     width: 30%;
     height: 30px;
     border: 0.2rem solid rgb(243, 255, 71);
@@ -118,6 +113,7 @@ h2 {
     margin: auto;
     display: block;
 }
+*/
 
 #score-bar-2-fill {
     width: 0%;
@@ -219,11 +215,10 @@ h2 {
         margin-bottom: 5%;
     }
 
-   
 
     /* select area */
 
 }
 
-/* For larger to medium sizes from 480px wide and down */
+/* For mobile devices from 480px wide and down */
 

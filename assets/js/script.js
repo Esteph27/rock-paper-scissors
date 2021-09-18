@@ -25,7 +25,7 @@ $("#btn-r").click(function() {
         $('#player-2-icon').css("background", "url(../assets/images/SCISSORS.jpg)");
     }
 
-    // works out score and score bar increases for winner 
+    // works out score and score bar fills in for winner 
     if (random === 3) {
         console.log("Player 1 wins!");
         player1Score++
@@ -36,7 +36,21 @@ $("#btn-r").click(function() {
         computerScore++
         $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
         console.log("Computer score", computerScore);
-    }
+    } 
+
+    //console.log($("#score-bar-1-fill").css("width"))
+
+    if ($("#score-bar-1-fill").css("width") === "300px") {
+        setTimeout(function(){ 
+            alert("you won!");
+            location.reload();
+        }, 500);
+        console.log('you won the whole game');
+    } 
+    
+    if (computerScore === 5) {
+    console.log('you lost try again');
+    } 
 })
   
 //---------- when player selects PAPER
@@ -100,4 +114,5 @@ $("#btn-s").click(function() {
 function chooseWeapon(weapon) {
 console.log(weapon)
 }
+
 
