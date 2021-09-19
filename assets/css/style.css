@@ -206,9 +206,9 @@ body {
     }
 }
 
-/* For mobile devices from 425px wide and down */
+/* For mobile devices from 480px wide and down */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
      /* header */
     #header {
         height: 110px;

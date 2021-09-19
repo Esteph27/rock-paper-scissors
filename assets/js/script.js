@@ -55,7 +55,7 @@ $("#btn-r").click(function() {
         console.log('player 1 won whole game');
     } 
 
-    // when score bar fill for player 2 reaches it's max (400px), delcare winner;
+    // when score bar fill for player 2 reaches it's max (300px), delcare winner;
     if ($("#score-bar-2-fill").css("width") === "300px") {
         setTimeout(function(){ 
             alert("Oh dear, looks like you lost this time. Try again?");
@@ -64,7 +64,7 @@ $("#btn-r").click(function() {
         console.log('computer won whole game');
     } 
 
-    // when score bar fill reaches it's max on mobile screen (120px);
+    // when score bar fill for either Player 1 or Computer reaches it's max on mobile screen (120px), declare winner;
     const isMobile = window.matchMedia("only screen and (max-width: 425px)").matches;
     if (isMobile) {
         if ($("#score-bar-1-fill").css("width") === "120px") {
