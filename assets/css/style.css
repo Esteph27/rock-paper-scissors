@@ -84,7 +84,7 @@ body {
 #score-bar-1, #score-bar-2 {
     width: 300px;
     height: 30px;
-    border: 0.2rem solid rgb(243, 255, 71);
+    border: 0.3rem solid rgb(243, 255, 71);
     border-radius: 50px;
     overflow: hidden;
     margin: auto;
@@ -171,6 +171,7 @@ body {
         margin-left: 20%;
         margin-right: 20%;
         letter-spacing: 20px;
+        margin: 1%;
     }
 
     #header-offset {
@@ -252,6 +253,7 @@ body {
     #score-bar-1, #score-bar-2 {
         width: 120px;
         height: 15px;
+        border: 0.2rem solid yellow;
     }
 
     #score-bar-1-fill, #score-bar-2-fill {
