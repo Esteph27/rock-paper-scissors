@@ -12,6 +12,7 @@ $("#btn-r").click(function() {
     // player 1 selects rock
     chooseWeapon("ROCK")
     $('#player-1-icon').css("background", "url(../assets/images/ROCK.jpg)");
+    $('#player-1-icon').css("background-size", "cover");
 
     // computer selects random
     const random = Math.floor((Math.random() * 3) + 1);
@@ -19,10 +20,13 @@ $("#btn-r").click(function() {
 
     if (random === 1) {
         $('#player-2-icon').css("background", "url(../assets/images/ROCK.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     } else if (random === 2) {
         $('#player-2-icon').css("background", "url(../assets/images/PAPER.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     } else if (random === 3) {
         $('#player-2-icon').css("background", "url(../assets/images/SCISSORS.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     }
 
     // works out score and score bar fills in for winner 
@@ -47,7 +51,7 @@ $("#btn-r").click(function() {
             alert("Congrats, you won! Play Again?");
             location.reload();
         }, 300);
-        console.log('you won the whole game');
+        console.log('player 1 won whole game');
     } 
 
     // when score bar for player 2 reaches it's max, delcare winner;
@@ -56,24 +60,28 @@ $("#btn-r").click(function() {
             alert("Oh dear, looks like you lost this time. Try again?");
             location.reload();
         }, 300);
-        console.log('you won the whole game');
+        console.log('computer won whole game');
     } 
 })
   
 //---------- when player selects PAPER
 $("#btn-p").click(function() {
     chooseWeapon("PAPER")
-    $('#player-1-icon').css("background", "url(../assets/images/PAPER.jpg)")
+    $('#player-1-icon').css("background", "url(../assets/images/PAPER.jpg)");
+    $('#player-1-icon').css("background-size", "cover");
 
     const random = Math.floor((Math.random() * 3) + 1);
     console.log(random);
 
     if (random === 1) {
         $('#player-2-icon').css("background", "url(../assets/images/ROCK.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     } else if (random === 2) {
         $('#player-2-icon').css("background", "url(../assets/images/PAPER.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     } else if (random === 3) {
         $('#player-2-icon').css("background", "url(../assets/images/SCISSORS.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     }
 
     if (random === 3) {
@@ -93,7 +101,7 @@ $("#btn-p").click(function() {
             alert("Congrats, you won! Play Again?");
             location.reload();
         }, 300);
-        console.log('you won the whole game');
+        console.log('player 1 won whole game');
     } 
 
     if ($("#score-bar-2-fill").css("width") === "300px") {
@@ -101,24 +109,28 @@ $("#btn-p").click(function() {
             alert("Oh dear, looks like you lost this time. Try again?");
             location.reload();
         }, 300);
-        console.log('you won the whole game');
+        console.log('computer won whole game');
     } 
 })
 
 //---------- when player selects SCISSORS
 $("#btn-s").click(function() {
     chooseWeapon("SCISSORS")
-    $('#player-1-icon').css("background", "url(../assets/images/SCISSORS.jpg)")
+    $('#player-1-icon').css("background", "url(../assets/images/SCISSORS.jpg)");
+    $('#player-1-icon').css("background-size", "cover");
 
     const random = Math.floor((Math.random() * 3) + 1);
     console.log(random);
 
     if (random === 1) {
         $('#player-2-icon').css("background", "url(../assets/images/ROCK.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     } else if (random === 2) {
         $('#player-2-icon').css("background", "url(../assets/images/PAPER.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     } else if (random === 3) {
         $('#player-2-icon').css("background", "url(../assets/images/SCISSORS.jpg)");
+        $('#player-2-icon').css("background-size", "cover");
     }
 
     if (random === 3) {
@@ -138,7 +150,7 @@ $("#btn-s").click(function() {
             alert("Congrats, you won! Play Again?");
             location.reload();
         }, 300);
-        console.log('you won the whole game');
+        console.log('player 1 won whole game');
     } 
 
     if ($("#score-bar-2-fill").css("width") === "300px") {
@@ -146,7 +158,7 @@ $("#btn-s").click(function() {
             alert("Oh dear, looks like you lost this time. Try again?");
             location.reload();
         }, 300);
-        console.log('you won the whole game');
+        console.log('computer won whole game');
     } 
 })
 

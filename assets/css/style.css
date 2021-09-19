@@ -148,7 +148,7 @@ body {
 
 /*---------------media queries /
 
-/* For Ipad devices */
+/* For screen devices 1200px wide and down */
 
 @media screen and (max-width: 1200px) {
    
@@ -208,7 +208,7 @@ body {
 
 /* For mobile devices from 480px wide and down */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
      /* header */
     #header {
         height: 100px;
