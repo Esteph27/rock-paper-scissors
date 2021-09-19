@@ -153,6 +153,10 @@ body {
     text-align: center;
 }
 
+.icons:hover {
+    cursor:pointer;
+}
+
 /*---------------media queries /
 
 /* For screen devices 1200px wide and down */
