@@ -206,12 +206,12 @@ body {
     }
 }
 
-/* For mobile devices from 480px wide and down */
+/* For mobile devices from 425px wide and down */
 
 @media screen and (max-width: 425px) {
      /* header */
     #header {
-        height: 100px;
+        height: 110px;
     }
 
     #header h1 {
@@ -239,13 +239,11 @@ body {
     }
 
     #score-bar-1, #score-bar-2 {
-        width: 70px;
+        width: 120px;
         height: 15px;
-        border: 0.2rem solid yellow;
     }
 
     #score-bar-1-fill, #score-bar-2-fill {
-        width: 0%;
         height: 15px;
     }
 
@@ -262,6 +260,7 @@ body {
     .icons {
         width: 80px;
         height: 80px;
+        margin-top: 8%;
         
     }
 

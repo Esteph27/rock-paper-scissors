@@ -7,7 +7,8 @@
 let player1Score = 0
 let computerScore = 0 
 
-//---------- when player selects ROCK 
+//---------- when player selects ROCK (function below is repeated for PAPPER and SCISSORS)
+
 $("#btn-r").click(function() {
     // player 1 selects rock
     chooseWeapon("ROCK")
@@ -45,7 +46,7 @@ $("#btn-r").click(function() {
     // check width of score fill bar 
     console.log($("#score-bar-1-fill").css("width"))
 
-    // when score bar for player 1 reaches it's max, delcare winner;
+    // when score bar fill for player 1 reaches it's max (300px), delcare winner;
     if ($("#score-bar-1-fill").css("width") === "300px") {
         setTimeout(function(){ 
             alert("Congrats, you won! Play Again?");
@@ -54,7 +55,7 @@ $("#btn-r").click(function() {
         console.log('player 1 won whole game');
     } 
 
-    // when score bar for player 2 reaches it's max, delcare winner;
+    // when score bar fill for player 2 reaches it's max (400px), delcare winner;
     if ($("#score-bar-2-fill").css("width") === "300px") {
         setTimeout(function(){ 
             alert("Oh dear, looks like you lost this time. Try again?");
@@ -62,6 +63,24 @@ $("#btn-r").click(function() {
         }, 300);
         console.log('computer won whole game');
     } 
+
+    // when score bar fill reaches it's max on mobile screen (120px);
+    const isMobile = window.matchMedia("only screen and (max-width: 425px)").matches;
+    if (isMobile) {
+        if ($("#score-bar-1-fill").css("width") === "120px") {
+            setTimeout(function(){ 
+                alert("Congrats, you won! Play Again?");
+                location.reload();
+            }, 300);
+            console.log('player 1 won whole game');
+        } else if ($("#score-bar-2-fill").css("width") === "120px") {
+            setTimeout(function(){ 
+                alert("Oh dear, looks like you lost this time. Try again?");
+                location.reload();
+            }, 300);
+            console.log('computer won whole game');
+        } 
+    }
 })
   
 //---------- when player selects PAPER
@@ -96,6 +115,8 @@ $("#btn-p").click(function() {
         console.log("Player score", player1Score);
     }
 
+    console.log($("#score-bar-1-fill").css("width"))
+
      if ($("#score-bar-1-fill").css("width") === "300px") {
         setTimeout(function(){ 
             alert("Congrats, you won! Play Again?");
@@ -111,6 +132,23 @@ $("#btn-p").click(function() {
         }, 300);
         console.log('computer won whole game');
     } 
+
+    const isMobile = window.matchMedia("only screen and (max-width: 425px)").matches;
+    if (isMobile) {
+        if ($("#score-bar-1-fill").css("width") === "120px") {
+            setTimeout(function(){ 
+                alert("Congrats, you won! Play Again?");
+                location.reload();
+            }, 300);
+            console.log('player 1 won whole game');
+        } else if ($("#score-bar-2-fill").css("width") === "120px") {
+            setTimeout(function(){ 
+                alert("Oh dear, looks like you lost this time. Try again?");
+                location.reload();
+            }, 300);
+            console.log('computer won whole game');
+        } 
+    }
 })
 
 //---------- when player selects SCISSORS
@@ -144,6 +182,8 @@ $("#btn-s").click(function() {
         $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
         console.log("Computer score", computerScore);
     }
+
+    console.log($("#score-bar-1-fill").css("width"))
      
     if ($("#score-bar-1-fill").css("width") === "300px") {
         setTimeout(function(){ 
@@ -160,6 +200,23 @@ $("#btn-s").click(function() {
         }, 300);
         console.log('computer won whole game');
     } 
+
+    const isMobile = window.matchMedia("only screen and (max-width: 425px)").matches;
+    if (isMobile) {
+        if ($("#score-bar-1-fill").css("width") === "120px") {
+            setTimeout(function(){ 
+                alert("Congrats, you won! Play Again?");
+                location.reload();
+            }, 300);
+            console.log('player 1 won whole game');
+        } else if ($("#score-bar-2-fill").css("width") === "120px") {
+            setTimeout(function(){ 
+                alert("Oh dear, looks like you lost this time. Try again?");
+                location.reload();
+            }, 300);
+            console.log('computer won whole game');
+        } 
+    }
 })
 
 function chooseWeapon(weapon) {
