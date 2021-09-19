@@ -129,6 +129,13 @@ body {
     background-color: rgba(255, 99, 71, 0.2);
 }
 
+#select-area h2  {
+    font-family: Righteous;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
 .icons {
     width: 100px;
     height: 100px;
@@ -136,7 +143,7 @@ body {
     display: inline-block;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 1.5%;
+    margin-top: 1%;
 }
 
 .icons h1 {
@@ -247,7 +254,11 @@ body {
         height: 15px;
     }
 
-    /* icons */
+    /* select area */
+
+    #select-area h2 {
+        font-size: 15px;
+    }
 
     #player-1-icon, #player-2-icon {
         margin: auto;
@@ -260,7 +271,7 @@ body {
     .icons {
         width: 80px;
         height: 80px;
-        margin-top: 8%;
+        margin-top: 5%;
         
     }
 
