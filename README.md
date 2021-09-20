@@ -57,33 +57,34 @@
 
 ## Technologies used:
 
-    * HTML
+* HTML 
 
-    * CSS 
-    
-    * JAVASCRIPT
+* CSS 
+
+* JAVASCRIPT 
+
 
 ## Testing;
 
-    * I tested the game works on the following browsers: Chrome and Safri
+* I tested the game works on the following browsers: Chrome and Safri
 
-    * I confirmed the score bar works correctly every time time a round is won. 
+* I confirmed the score bar works correctly every time time a round is won. 
 
-    * I confirmed this project is responsive, looks good and functions on all screen sizes using the devtools   device toolbar 
+* I confirmed this project is responsive, looks good and functions on all screen sizes using the devtools   device toolbar 
 
-    * I confirmed the colours, icons and fonts chosen are easy to read and accessible by running it through lightest in dev tools
+* I confirmed the colours, icons and fonts chosen are easy to read and accessible by running it through lightest in dev tools
 
 ![lighthouse screenshot](assets/screenshots/lighthouse.png)
 
 ## Bugs;
 
-     * During testing, I discovered that when the game was displayed on smaller screen devices, and after the user clicking on a button in the section area, the background image in the player icon would revert back to its original size making it unclear to see the image inside it’s container. I fixed this by targeting the background size in my script.js file. 
+* During testing, I discovered that when the game was displayed on smaller screen devices, and after the user clicking on a button in the section area, the background image in the player icon would revert back to its original size making it unclear to see the image inside it’s container. I fixed this by targeting the background size in my script.js file. 
 
-    * I discovered that on mobile devices, the alert window did not pop up when the score bar reached its limit/filled up. I fixed this by adding a detect screen size function in my script.js file.
+* I discovered that on mobile devices, the alert window did not pop up when the score bar reached its limit/filled up. I fixed this by adding a detect screen size function in my script.js file.
 
-    * During development, I discovered the timing of the alert pop up window was off (it was popping up before the scoreboard had reached its max). I fixed this by adding the setTimeout function in my script.js file.
+* During development, I discovered the timing of the alert pop up window was off (it was popping up before the scoreboard had reached its max). I fixed this by adding the setTimeout function in my script.js file.
 
-    * When deployed, I discovered the icon images were disappearing after the user’s first click, I fixed this by XXXX
+* When deployed, I discovered the icon images were disappearing after the user’s first click, I fixed this by XXXX
 
 ## Bugs unfixed 
 
@@ -91,13 +92,13 @@
 
 ## Validator testing;
 
-    * HTML; No errors were returned when passing the code through the official W3C validator.
-    
-    * CSS: No errors were found when passing through the official (Jigsaw) validator.
+* HTML; No errors were returned when passing the code through the official W3C validator.
 
-    * JAVASCRIPT: No errors were found when passing through the JSHint JavaScript validator.
+* CSS: No errors were found when passing through the official (Jigsaw) validator.
 
-    * Accessibility; I confirmed that the colours and fonts selected are easy to read and accessibly by running it through lighthouse in devtools.
+* JAVASCRIPT: No errors were found when passing through the JSHint JavaScript validator.
+
+* Accessibility; I confirmed that the colours and fonts selected are easy to read and accessibly by running it through lighthouse in devtools.
 
 ## Deployment
 
@@ -115,12 +116,12 @@
 
 ### Contents;
 
-    * The code for detecting mobile screens is from JavaScript Plain English (https://javascript.plainenglish.io/)
-    Jquery elements inspired from jquery.com
+* The code for detecting mobile screens is from JavaScript Plain English (https://javascript.plainenglish.io/)
+Jquery elements inspired from jquery.com
 
 ### Media;
 
-    * The photos used in this site were obtained from vecteezy.com
+* The photos used in this site were obtained from vecteezy.com
 
 
 
