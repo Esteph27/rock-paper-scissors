@@ -11,7 +11,7 @@
 
 ![device screen image](assets/screenshots/device_screens.png)
 
-## Features
+## Features;
 
 ### Existing features;
 
@@ -55,23 +55,29 @@
     This is for desktop users. The fav icon will allow the user to easily find the game easily and effectively.
 
 
-##Technologies used:
+## Technologies used:
+
     * HTML
+
     * CSS 
+    
     * JAVASCRIPT
 
 ## Testing;
 
     * I tested the game works on the following browsers: Chrome and Safri
+
     * I confirmed the score bar works correctly every time time a round is won. 
+
     * I confirmed this project is responsive, looks good and functions on all screen sizes using the devtools   device toolbar 
+
     * I confirmed the colours, icons and fonts chosen are easy to read and accessible by running it through lightest in dev tools
 
 ![lighthouse screenshot](assets/screenshots/lighthouse.png)
 
 ## Bugs;
 
-    * During testing, I discovered that when the game was displayed on smaller screen devices, and after the user clicking on a button in the section area, the background image in the player icon would revert back to its original size making it unclear to see the image inside it’s container. I fixed this by targeting the background size in my script.js file. 
+     * During testing, I discovered that when the game was displayed on smaller screen devices, and after the user clicking on a button in the section area, the background image in the player icon would revert back to its original size making it unclear to see the image inside it’s container. I fixed this by targeting the background size in my script.js file. 
 
     * I discovered that on mobile devices, the alert window did not pop up when the score bar reached its limit/filled up. I fixed this by adding a detect screen size function in my script.js file.
 
@@ -86,26 +92,34 @@
 ## Validator testing;
 
     * HTML; No errors were returned when passing the code through the official W3C validator.
+    
     * CSS: No errors were found when passing through the official (Jigsaw) validator.
-    * JAVASCRIPT: No errors were found when passing through the JSHint JavaScript validator. 
+
+    * JAVASCRIPT: No errors were found when passing through the JSHint JavaScript validator.
+
     * Accessibility; I confirmed that the colours and fonts selected are easy to read and accessibly by running it through lighthouse in devtools.
 
 ## Deployment
 
 * The website was deployed to GitHub Pages using the following steps;
+
     * In the Github repository, navigate to the Setting Tab 
-    *From the source section drop-down menu, select ‘Main’
-    *Once the Master Branch has been selected, refresh the page and the page provided the link the completed website 
-    *The link to the live site is here - https://esteph27.github.io/rock-paper-scissors/
+
+    * From the source section drop-down menu, select ‘Main’
+
+    * Once the Master Branch has been selected, refresh the page and the page provided the link the completed website 
+
+    * The link to the live site is here - https://esteph27.github.io/rock-paper-scissors/
 
 ## Credits
 
-###C ontents;
+### Contents;
 
     * The code for detecting mobile screens is from JavaScript Plain English (https://javascript.plainenglish.io/)
     Jquery elements inspired from jquery.com
 
 ### Media;
+
     * The photos used in this site were obtained from vecteezy.com
 
 
