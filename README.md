@@ -1,16 +1,20 @@
-#Welcome to Rock.Paper.Scissors!
+# Welcome to Rock.Paper.Scissors!
 
 A colourful and retro take on the classic game; rock, paper, scissors. This is for anyone looking to pass a small bit of time, whether on the commute to work, taking a small break from their daily do-to-do, or just fancy a challenge against the computer! This is the game to play. 
 
-##Users
+## Users
 This game was made for anyone and everyone of all ages. 
 Users will learn to play this classic game whilst challenge them to rely on their instincts and decision making skills to play against the computer. The end result is to simply have fun. 
 
 (Device screen images here) 
 
-##Features
+![device screen image](../images/device.screens.png)
 
-###Existing features;
+![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
+## Features
+
+### Existing features;
 
 * Header;
 
@@ -44,7 +48,7 @@ This is for desktop users. The fav icon will allow the user to easily find the g
 * CSS 
 * JAVASCRIPT
 
-##Testing
+## Testing
 * I tested the game works on the following browsers: Chrome and Safri
 * I confirmed the score bar works correctly every time time a round is won. 
 * I confirmed this project is responsive, looks good and functions on all screen sizes using the devtools device toolbar 
@@ -52,7 +56,7 @@ This is for desktop users. The fav icon will allow the user to easily find the g
 
 (Image of lighthouse results) 
 
-##Bugs
+## Bugs
 * During testing, I discovered that when the game was displayed on smaller screen devices, and after the user clicking on a button in the section area, the background image in the player icon would revert back to its original size making it unclear to see the image inside it’s container. I fixed this by targeting the background size in my script.js file. 
 
 * I discovered that on mobile devices, the alert window did not pop up when the score bar reached its limit/filled up. I fixed this by adding a detect screen size function in my script.js file.
@@ -61,18 +65,18 @@ This is for desktop users. The fav icon will allow the user to easily find the g
 
 * When deployed, I discovered the icon images were disappearing after the user’s first click, I fixed this by XXXX
 
-##Bugs unfixed 
+## Bugs unfixed 
 
 No unfixed bugs 
 
-##Validator testing;
+## Validator testing;
 
 * HTML; No errors were returned when passing the code through the official W3C validator.
 * CSS: No errors were found when passing through the official (Jigsaw) validator.
 * JAVASCRIPT: No errors were found when passing through the JSHint JavaScript validator. 
 * Accessibility; I confirmed that the colours and fonts selected are easy to read and accessibly by running it through lighthouse in devtools.
 
-##Deployment
+## Deployment
 
 * The website was deployed to GitHub Pages using the following steps;
     * In the Github repository, navigate to the Setting Tab 
@@ -80,14 +84,14 @@ No unfixed bugs
     *Once the Master Branch has been selected, refresh the page and the page provided the link the completed website 
     *The link to the live site is here - https://esteph27.github.io/rock-paper-scissors/
 
-##Credits
+## Credits
 
-###Contents;
+###C ontents;
 
 * The code for detecting mobile screens is from JavaScript Plain English (https://javascript.plainenglish.io/)
 Jquery elements inspired from jquery.com
 
-###Media;
+### Media;
 * The photos used in this site were obtained from vecteezy.com
 
 
