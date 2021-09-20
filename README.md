@@ -84,7 +84,7 @@
 
 * During development, I discovered the timing of the alert pop up window was off (it was popping up before the scoreboard had reached its max). I fixed this by adding the setTimeout function in my script.js file.
 
-* When deployed, I discovered the icon images were disappearing after the user’s first click, I fixed this by XXXX
+* When deployed, I discovered the icon images were disappearing after the user’s first click, I fixed this by changing the file path in my script.js to.
 
 ## Bugs unfixed 
 
