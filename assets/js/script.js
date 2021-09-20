@@ -13,7 +13,7 @@ $("#btn-r").click(function() {
     // player 1 selects rock
     chooseWeapon("ROCK")
     $('#player-1-icon').css("background", "url(assets/images/ROCK.jpg)");
-    py$('#player-1-icon').css("background-size", "cover");
+    $('#player-1-icon').css("background-size", "cover");
 
     // computer selects random
     const random = Math.floor((Math.random() * 3) + 1);
@@ -33,18 +33,18 @@ $("#btn-r").click(function() {
     // works out score and score bar fills in for winner 
     if (random === 3) {
         console.log("Player 1 wins!");
-        player1Score++
-        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%")
+        player1Score++;
+        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%");
         console.log("Player score", player1Score);
     } else if (random == 2) {
         console.log("You lost - haha");
-        computerScore++
-        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
+        computerScore++;
+        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%");
         console.log("Computer score", computerScore);
     } 
 
     // check width of score fill bar 
-    console.log($("#score-bar-1-fill").css("width"))
+    console.log($("#score-bar-1-fill").css("width"));
 
     // when score bar fill for player 1 reaches it's max (300px), delcare winner;
     if ($("#score-bar-1-fill").css("width") === "300px") {
@@ -105,17 +105,17 @@ $("#btn-p").click(function() {
 
     if (random === 3) {
         console.log("You lost - haha");
-        computerScore++
-        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
-        console.log("Computer score", computerScore)
+        computerScore++;
+        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%");
+        console.log("Computer score", computerScore);
     } else if (random == 1) {
         console.log("Player 1 wins!");
-        player1Score++
-        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%")
+        player1Score++;
+        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%");
         console.log("Player score", player1Score);
     }
 
-    console.log($("#score-bar-1-fill").css("width"))
+    console.log($("#score-bar-1-fill").css("width"));
 
      if ($("#score-bar-1-fill").css("width") === "300px") {
         setTimeout(function(){ 
@@ -173,17 +173,17 @@ $("#btn-s").click(function() {
 
     if (random === 3) {
         console.log("Player 1 wins!");
-        player1Score++
-        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%")
+        player1Score++;
+        $("#score-bar-1-fill").css("width", (100/5) * player1Score + "%");
         console.log("Player score", player1Score);
     } else if (random == 1) {
         console.log("You lost - haha");
         computerScore++
-        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%")
+        $("#score-bar-2-fill").css("width", (100/5) * computerScore + "%");
         console.log("Computer score", computerScore);
     }
 
-    console.log($("#score-bar-1-fill").css("width"))
+    console.log($("#score-bar-1-fill").css("width"));
      
     if ($("#score-bar-1-fill").css("width") === "300px") {
         setTimeout(function(){ 
