@@ -8,7 +8,7 @@ Users will learn to play this classic game whilst challenge them to rely on thei
 
 (Device screen images here) 
 
-![device screen image](assets/images/device.screens.png)
+![device screen image](assets/images/device_screens.png)
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
