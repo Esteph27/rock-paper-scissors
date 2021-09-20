@@ -13,7 +13,7 @@ $("#btn-r").click(function() {
     // player 1 selects rock
     chooseWeapon("ROCK")
     $('#player-1-icon').css("background", "url(../images/ROCK.jpg)");
-    $('#player-1-icon').css("background-size", "cover");
+    //$('#player-1-icon').css("background-size", "cover");
 
     // computer selects random
     const random = Math.floor((Math.random() * 3) + 1);
@@ -21,13 +21,13 @@ $("#btn-r").click(function() {
 
     if (random === 1) {
         $('#player-2-icon').css("background", "url(../images/ROCK.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+        //$('#player-2-icon').css("background-size", "cover");
     } else if (random === 2) {
         $('#player-2-icon').css("background", "url(../images/PAPER.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+       // $('#player-2-icon').css("background-size", "cover");
     } else if (random === 3) {
         $('#player-2-icon').css("background", "url(../images/SCISSORS.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+        //$('#player-2-icon').css("background-size", "cover");
     }
 
     // works out score and score bar fills in for winner 
@@ -87,20 +87,20 @@ $("#btn-r").click(function() {
 $("#btn-p").click(function() {
     chooseWeapon("PAPER")
     $('#player-1-icon').css("background", "url(../images/PAPER.jpg)");
-    $('#player-1-icon').css("background-size", "cover");
+   //$('#player-1-icon').css("background-size", "cover");
 
     const random = Math.floor((Math.random() * 3) + 1);
     console.log(random);
 
     if (random === 1) {
         $('#player-2-icon').css("background", "url(../images/ROCK.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+        //$('#player-2-icon').css("background-size", "cover");
     } else if (random === 2) {
         $('#player-2-icon').css("background", "url(../images/PAPER.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+       // $('#player-2-icon').css("background-size", "cover");
     } else if (random === 3) {
         $('#player-2-icon').css("background", "url(../images/SCISSORS.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+       // $('#player-2-icon').css("background-size", "cover");
     }
 
     if (random === 3) {
@@ -155,20 +155,20 @@ $("#btn-p").click(function() {
 $("#btn-s").click(function() {
     chooseWeapon("SCISSORS")
     $('#player-1-icon').css("background", "url(../images/SCISSORS.jpg)");
-    $('#player-1-icon').css("background-size", "cover");
+    //$('#player-1-icon').css("background-size", "cover");
 
     const random = Math.floor((Math.random() * 3) + 1);
     console.log(random);
 
     if (random === 1) {
         $('#player-2-icon').css("background", "url(../images/ROCK.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+       //$('#player-2-icon').css("background-size", "cover");
     } else if (random === 2) {
         $('#player-2-icon').css("background", "url(../images/PAPER.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+       //$('#player-2-icon').css("background-size", "cover");
     } else if (random === 3) {
         $('#player-2-icon').css("background", "url(../images/SCISSORS.jpg)");
-        $('#player-2-icon').css("background-size", "cover");
+        //$('#player-2-icon').css("background-size", "cover");
     }
 
     if (random === 3) {
@@ -220,7 +220,7 @@ $("#btn-s").click(function() {
 })
 
 function chooseWeapon(weapon) {
-console.log(weapon)
+    console.log(weapon);
 }
 
 
